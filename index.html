@@ -3,16 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="peinture.js"></script>
+	
 </head>
 <body>
-	<canvas id="paper" width="500" height="500"></canvas>
-	<br/>
-	<button class="outil" type='pinceau' data="pinceau">pinceau</button>
-	<button class="outil" type='cercle' data="cercle">cercle</button>
-	<input id='paintwidth' data='paintwidth' type="text" placeholder='largeur'>
-	<input id='paintcolor' data='paintcolor' type="text" placeholder='color'>
-	<span></span>
-
+  <canvas id="paper" width="500" height="500"></canvas>
+  <br/>
+  <button class="outil" id='clear'>Clear</button>
+  <button class="outil" id='pinceau'>pinceau</button>
+  <button class="outil" id='cercle'>cercle</button>
+  <button class="outil" id='square'>carré</button>
+  <button class="outil" id='straight'>ligne</button>
+  <br>
+  <input id='paintwidth' data='paintwidth' type="text" placeholder='largeur'>
+  <input id='strokecolor' data='strokecolor' type="text" placeholder='strokecolor'>
+  <input id='fillcolor' data='fillcolor' type="text" placeholder='fillcolor'>
+  <br>
+  <input type="checkbox" id="modify-texte"> psyché on ?
+  <span></span>
 </body>
+
 </html>
